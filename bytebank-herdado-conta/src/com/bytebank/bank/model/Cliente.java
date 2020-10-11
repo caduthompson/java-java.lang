@@ -1,5 +1,13 @@
 package com.bytebank.bank.model;
 
+/**
+ * Class show features about client on bytebank
+ * 
+ * @author Carlos Thompson
+ * @version 0.1
+ *
+ */
+
 public class Cliente {
 
     private String nome;

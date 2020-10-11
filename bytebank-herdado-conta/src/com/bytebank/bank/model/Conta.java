@@ -1,5 +1,12 @@
 package com.bytebank.bank.model;
 
+/**
+ * Class represents the frame of an account
+ * 
+ * @author Carlos Thompson
+ *
+ */
+
 public abstract class Conta {
 
 	protected double saldo;
@@ -9,6 +16,14 @@ public abstract class Conta {
 	private static int total = 0;
 	
 	public Conta() {}
+	
+	/**
+	 * Constructor to initialize object Account from the agency and number
+	 * 
+	 * @param agencia
+	 * @param numero
+	 */
+	
 
 	public Conta(int agencia, int numero) {
 		Conta.total++;
@@ -20,6 +35,13 @@ public abstract class Conta {
 	}
 
 	public abstract void deposita(double valor);
+	
+	/**
+	 * Valor needs to be more than saldo.
+	 * 
+	 * @param valor
+	 * @throws SaldoInsuficienteException
+	 */
 
 	public void saca(double valor) throws SaldoInsuficienteException{
 		if (this.saldo < valor) {
