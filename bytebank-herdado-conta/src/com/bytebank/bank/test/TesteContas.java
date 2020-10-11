@@ -4,7 +4,6 @@ import com.bytebank.bank.model.ContaCorrente;
 import com.bytebank.bank.model.ContaPoupanca;
 import com.bytebank.bank.model.SaldoInsuficienteException;
 
-
 public class TesteContas {
 
 	public static void main(String[] args) throws SaldoInsuficienteException{
